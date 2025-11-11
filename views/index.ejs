@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= title %></title>
+</head>
+<body>
+  <h1><%= title %></h1>
+  <ul>
+    <% elementos.forEach(function(el) { %>
+      <li>
+        <span><%= el.texto %></span>
+        <img src="<%= el.imagen %>" alt="Imagen" style="height:50px;"/>
+      </li>
+    <% }); %>
+  </ul>
+  <a href="/login"><button>Login</button></a>
+</body>
+</html>
